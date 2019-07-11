@@ -1,0 +1,11 @@
+
+name: db.pqxx
+version: master
+property:
+  compiler: gcc-7.2
+inc: |
+  ./pq/include
+  ./pq/config/sample-headers/compiler/${compiler}
+src: ./pq/src
+lib: pq
+arg: -DPQXX_HAVE_STRERROR_R_GNU
